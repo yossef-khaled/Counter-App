@@ -10,12 +10,12 @@ class Counter extends Component {
   // constructor() {
   //   //Constructor of the parent class.
   //   super();
-  //   this.handleIncreament = this.handleIncreament.bind(this);
+  //   this.handleIncrement = this.handleIncrement.bind(this);
   // }
 
   //or:
 
-  handleIncreament = () => {
+  handleIncrement = () => {
     console.log("You pressed increament button");
     this.state.count++;
   };
@@ -25,7 +25,7 @@ class Counter extends Component {
       <div>
         <span className={this.getBadgeStyle()}>{this.formatCount()}</span>
         <button
-          onClick={this.handleIncreament}
+          onClick={this.handleIncrement}
           className="btn btn-secondary btn-sm"
         >
           Increment
